@@ -216,10 +216,10 @@ orderInfoBtn.addEventListener("click",function(e){
   let orderData={
     "data": {
       "user": {
-        "name": customerName.value,
-        "tel": customerPhone.value,
-        "email": customerEmail.value,
-        "address": customerAddress.value,
+        "name": customerName.value.trim(),
+        "tel": customerPhone.value.trim(),
+        "email": customerEmail.value.trim(),
+        "address": customerAddress.value.trim(),
         "payment": tradeWay.value
       }
     }
